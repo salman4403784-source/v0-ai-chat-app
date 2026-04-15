@@ -46,6 +46,8 @@ export function ChatInput({ onSend, isLoading, disabled }: ChatInputProps) {
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Type your message..."
+          id="chat-input"
+          name="chat-input"
           disabled={isLoading || disabled}
           rows={1}
           className="flex-1 resize-none bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none text-sm leading-relaxed max-h-[200px] py-2 px-1"
