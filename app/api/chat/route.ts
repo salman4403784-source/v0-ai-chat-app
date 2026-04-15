@@ -23,7 +23,7 @@ export async function POST(req: Request) {
       model: fireworks('accounts/fireworks/models/kimi-k2p5'),
       system: 'Be helpful and concise.',
       messages: convertedMessages,
-      maxTokens: 32768,
+      maxOutputTokens: 32768,
       temperature: 0.6,
       topP: 1,
       topK: 40,
