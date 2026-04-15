@@ -4,7 +4,7 @@ import { createFireworks } from '@ai-sdk/fireworks'
 export const maxDuration = 60
 
 const fireworks = createFireworks({
-  apiKey: 'fw_3Zm5sfu21ztf14QAbpRjTeDQ',
+  apiKey: 'fw_L4Nrpnd5M4yuSrYJBKVZuX',
 })
 
 export async function POST(req: Request) {
