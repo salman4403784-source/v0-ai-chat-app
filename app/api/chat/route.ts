@@ -20,13 +20,13 @@ export async function POST(req: Request) {
     }))
 
     const result = streamText({
-      model: fireworks('accounts/fireworks/models/kimi-k2-instruct-0905'),
-      system: 'You are a helpful, friendly AI assistant. You provide clear, concise, and accurate responses. Be brief and to the point.',
+      model: fireworks('accounts/fireworks/models/kimi-k2p5'),
+      system: 'Be helpful and concise.',
       messages: convertedMessages,
-      maxTokens: 4096,
-      temperature: 0.4,
-      topP: 0.9,
-      topK: 30,
+      maxTokens: 32768,
+      temperature: 0.6,
+      topP: 1,
+      topK: 40,
       presencePenalty: 0,
       frequencyPenalty: 0,
     })
