@@ -22,7 +22,7 @@ export async function POST(req: Request) {
       headers: {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.FIREWORKS_API_KEY || 'fw_3Zm5sfu21ztf14QAbpRjTeDQ'}`
+        "Authorization": "Bearer fw_3Zm5sfu21ztf14QAbpRjTeDQ"
       },
       body: JSON.stringify({
         model: "accounts/fireworks/models/kimi-k2-instruct-0905",
